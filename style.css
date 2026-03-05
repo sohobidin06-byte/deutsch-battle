@@ -1,12 +1,51 @@
-body{
-background:black;
-color:white;
-text-align:center;
-font-family:Arial;
+body {
+    background: #0f172a;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
 }
 
-button{
-padding:10px;
-background:blue;
-color:white;
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 12px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 10px;
+    width: 80%;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+
+#rope-wrapper {
+    margin: 20px auto;
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#rope {
+    font-size: 40px;
+    transition: 0.8s;
+}
+
+.quiz-box {
+    margin-top: 20px;
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.timer {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
