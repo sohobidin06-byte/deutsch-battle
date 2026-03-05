@@ -1,9 +1,8 @@
-// Firebase конфигурация
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  databaseURL: "https://germangame-b5626-default-rtdb.firebaseio.com/",
-  projectId: "YOUR_PROJECT_ID",
+  apiKey: "СЕНИН_API_KEY",
+  authDomain: "СЕНИН_PROJECT.firebaseapp.com",
+  databaseURL: "СЕНИН_DATABASE_URL",
+  projectId: "СЕНИН_PROJECT_ID",
 };
 firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
