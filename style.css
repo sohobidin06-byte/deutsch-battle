@@ -1,73 +1,66 @@
 body {
     background: #461a42;
     color: white;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
     display: flex;
     justify-content: center;
     padding: 20px;
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    padding: 25px;
-    border-radius: 24px;
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
     text-align: center;
 }
 
-input {
+input, textarea {
     width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    border-radius: 12px;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 15px;
     border: none;
+    font-size: 16px;
     box-sizing: border-box;
 }
 
 button {
-    width: 100%;
-    padding: 12px;
-    background: #8854c0;
-    color: white;
-    border: none;
-    border-radius: 12px;
-    font-weight: bold;
     cursor: pointer;
-    margin-bottom: 10px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.admin-panel {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px dashed #ccc;
-    border-radius: 15px;
+.btn-main { background: #8854c0; color: white; width: 100%; padding: 15px; font-size: 18px; }
+.btn-admin { background: #10b981; color: white; padding: 10px; width: 100%; }
+
+.admin-section {
+    margin-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 20px;
 }
 
 #rope-wrapper {
     background: #2d112b;
-    height: 80px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 40px;
-    margin: 20px 0;
+    border-radius: 35px;
+    margin: 25px 0;
+    position: relative;
     overflow: hidden;
 }
 
-#rope { font-size: 35px; transition: 0.5s; position: absolute; }
+#rope { font-size: 30px; transition: 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); position: absolute; }
 
-.quiz-box {
-    background: white;
-    color: #333;
-    padding: 20px;
-    border-radius: 20px;
-}
+.quiz-box { background: white; color: #333; padding: 20px; border-radius: 25px; margin-top: 20px; }
+.quiz-box h2 { color: #461a42; }
 
-@keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-10px); }
-    50% { transform: translateX(10px); }
-    100% { transform: translateX(0); }
-}
+.stats { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 10px; }
