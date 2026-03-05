@@ -1,1 +1,36 @@
-<h1>Hello World</h1>.
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch Battle</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Deutsch Battle</h1>
+
+    <input id="name-input" placeholder="Атыңызды жазыңыз">
+    <button onclick="joinGame()">Кирүү</button>
+
+    <div id="game-screen" style="display:none;">
+        <div class="timer">⏳ <span id="game-timer">03:00</span></div>
+
+        <div id="rope-wrapper">
+            <div id="rope">🟦——⚖️——🟥</div>
+        </div>
+
+        <div class="quiz-box">
+            <h2 id="q-text">...</h2>
+            <p>Суроо таймери: <span id="q-timer">20</span>с</p>
+            <input type="text" id="ans-input" placeholder="Немисчесин жаз...">
+            <button onclick="submitAnswer()">ЖӨНӨТҮҮ</button>
+        </div>
+    </div>
+</div>
+
+<script src="firebase.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
