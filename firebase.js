@@ -1,8 +1,17 @@
+// firebase.js
 const firebaseConfig = {
-  apiKey: "СЕНИН_API_KEY",
-  authDomain: "СЕНИН_PROJECT.firebaseapp.com",
-  databaseURL: "СЕНИН_DATABASE_URL",
-  projectId: "СЕНИН_PROJECT_ID",
+  apiKey: "ТВОЙ_API_KEY",
+  authDomain: "твой-проект.firebaseapp.com",
+  
+  // Для региона США (US Central) формат ссылки обычно такой:
+  databaseURL: "https://germangame-b5626-default-rtdb.firebaseio.com/", 
+  
+  projectId: "твой-проект",
+  storageBucket: "твой-проект.appspot.com",
+  messagingSenderId: "твой-id",
+  appId: "твой-app-id"
 };
+
+// Инициализация
 firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
