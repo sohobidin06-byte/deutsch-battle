@@ -1,51 +1,73 @@
 body {
-    background: #0f172a;
+    background: #461a42;
     color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
     padding: 20px;
 }
 
-button {
-    padding: 10px;
-    margin-top: 10px;
-    background: #6366f1;
-    color: white;
-    border: none;
-    border-radius: 12px;
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 24px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
 }
 
 input {
-    padding: 10px;
-    margin-top: 10px;
-    width: 80%;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
     border-radius: 12px;
-    border: 1px solid #ccc;
+    border: none;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #8854c0;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.admin-panel {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    border-radius: 15px;
 }
 
 #rope-wrapper {
-    margin: 20px auto;
-    background: rgba(255,255,255,0.05);
-    padding: 20px;
-    border-radius: 20px;
+    background: #2d112b;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    margin: 20px 0;
     overflow: hidden;
 }
 
-#rope {
-    font-size: 40px;
-    transition: 0.8s;
-}
+#rope { font-size: 35px; transition: 0.5s; position: absolute; }
 
 .quiz-box {
-    margin-top: 20px;
-    background: rgba(255,255,255,0.05);
+    background: white;
+    color: #333;
     padding: 20px;
-    border-radius: 16px;
+    border-radius: 20px;
 }
 
-.timer {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
 }
